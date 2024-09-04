@@ -1,0 +1,72 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPEMS - Student Exams Result</title>
+    <link rel="stylesheet" href="styles/results_page.css">
+</head>
+<body>
+    <!-- Header block containing the logo, title, and main menu -->
+    <div id="header-block">
+        <div class="logo-container">
+            <img src="images/logo-300x300.png" alt="Logo" class="logo" />
+        </div>
+        <div class="title-container">
+            <h1>KPEMS - Student Exams Result</h1>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="under_development.html">My Assigned Tasks</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Data block containing the results -->
+    <div id="data-block">
+        <h2>Exam Results for <?php echo $_SESSION['student_name']; ?></h2>
+        <h3>Admission Number: <?php echo $_SESSION['student_admission_number']; ?></h3>
+        <table>
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Exam Type</th>
+                <th>Score</th>
+                <th>Teacher</th>
+            </tr>
+            <?php
+            if (isset($_SESSION['report_data']) && !empty($_SESSION['report_data'])) {
+                foreach ($_SESSION['report_data'] as $row) {
+                    echo '<tr>';
+                    echo '<td>' . $row['grade_subject_code'] . '</td>';
+                    echo '<td>' . $row['grade_subject_name'] . '</td>';
+                    echo '<td>' . $row['exam_type'] . '</td>';
+                    echo '<td>' . $row['examination_score'] . '</td>';
+                    echo '<td>' . $row['teacher_name'] . '</td>';
+                    echo '</tr>';
+                }
+            } else {
+                echo '<tr><td colspan="5">No results found for the provided details.</td></tr>';
+            }
+            ?>
+        </table>
+    </div>
+
+    <!-- Footer block containing copyright and social media links -->
+    <div id="footer-block">
+        <p>&copy; 2024 Kenya Primary School Examination Management System</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Student Report</title>
+    <link rel="stylesheet" href="styles/reports.css" />
+  </head>
+  <body>
+    <div id="header-block">
+      <div class="logo-container">
+        <img src="images/logo-300x300.png" alt="Logo" class="logo" />
+      </div>
+      <div class="title-container">
+        <h1>KPEMS - Generate Student Report</h1>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="under_development.html">My Assigned Tasks</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="data-block">
+      <h2>Enter Student Information</h2>
+      <form action="reports.php" method="post">
+        <!-- Changed action here -->
+        <label for="student_admission_number">Student Admission Number:</label>
+        <input
+          type="text"
+          id="student_admission_number"
+          name="student_admission_number"
+          required
+        /><br /><br />
+
+        <label for="grade_subject_code">Grade Subject Code:</label>
+        <input
+          type="text"
+          id="grade_subject_code"
+          name="grade_subject_code"
+          required
+        /><br /><br />
+
+        <input type="submit" value="Generate Report" />
+      </form>
+    </div>
+
+    <div id="footer-block">
+      <p>&copy; 2024 Kenya Primary School Examination Management System</p>
+      <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </body>
+</html>

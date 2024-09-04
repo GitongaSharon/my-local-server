@@ -1,0 +1,161 @@
+/* Main layout and general styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the default font for the body to Arial */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    background: url("../images/background.jpg") no-repeat center center fixed; /* Sets a background image, centers it, and makes it fixed */
+    background-size: cover; /* Ensures the background image covers the entire page */
+  }
+  
+  /* Header block styling */
+  #header-block {
+    width: 100%; /* Makes the header block full width */
+    padding: 20px; /* Adds padding inside the header block */
+    background-color: #005f9e; /* Dark background color for the header */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Vertically centers items in the header block */
+  }
+  
+  /* Logo container styling */
+  .logo-container {
+    width: 100px; /* Sets the width of the logo container */
+    text-align: center; /* Centers the logo horizontally */
+  }
+  
+  /* Logo image styling */
+  .logo {
+    width: 100px; /* Sets the width of the logo */
+    height: 100px; /* Sets the height of the logo */
+  }
+  
+  /* Title container styling */
+  .title-container {
+    flex-grow: 1; /* Allows the title container to grow and take up available space */
+    padding-left: 20px; /* Adds padding to the left of the title */
+  }
+  
+  /* Title text styling */
+  .title-container h1 {
+    font-size: 24px; /* Sets the font size for the title */
+    color: white; /* Sets the text color to white */
+    margin: 0; /* Removes default margin */
+  }
+  
+  /* Data block styling: Contains the registration image and form */
+  #data-block {
+    display: flex; /* Uses flexbox layout for the data block */
+    justify-content: space-around; /* Distributes the space between image and form evenly */
+    align-items: center; /* Vertically centers content within the data block */
+    padding: 40px; /* Adds padding inside the data block */
+    /* background-color: #0f79b0; /* Background color for the data block (commented out) */
+  }
+  
+  /* Styling for the registration image container */
+  .registration-image {
+    background-color: #a2d5f2; /* Light blue background color for the image container */
+    padding: 20px; /* Adds padding inside the container */
+    margin: 10px; /* Adds margin around the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    text-align: center; /* Centers the image horizontally */
+    flex: 1; /* Allows the container to grow or shrink as needed */
+  }
+  
+  /* Styling for the registration image itself */
+  .intro-image {
+    width: 100%; /* Makes the image take up the full width of its container */
+    max-width: 350px; /* Limits the maximum width of the image */
+    height: auto; /* Ensures the height scales proportionally with the width */
+  }
+  
+  /* Styling for the user registration details container */
+  .user-registration-details {
+    /* background-color: #a2d5f2; /* Light blue background color for the form container (commented out) */
+    padding: 20px; /* Adds padding inside the container */
+    margin: 10px; /* Adds margin around the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    flex: 2; /* Allows the container to grow or shrink as needed */
+    display: flex; /* Uses flexbox layout for the form container */
+    flex-direction: column; /* Stacks the form elements vertically */
+  }
+  
+  /* Styling for the labels in the user registration form */
+  .user-registration-details label {
+    font-size: 14px; /* Sets the font size for the labels */
+    color: #333; /* Sets the text color for the labels to dark gray */
+    margin-bottom: 5px; /* Adds space below each label */
+    display: block; /* Makes the labels block-level elements (takes full width) */
+  }
+  
+  /* Styling for the input fields and select dropdown in the user registration form */
+  .user-registration-details input,
+  .user-registration-details select {
+    padding: 10px; /* Adds padding inside the input fields and select dropdown */
+    margin-bottom: 20px; /* Adds margin below each input field and select dropdown */
+    width: 300px; /* Sets a fixed width for the input fields and select dropdown */
+    border-radius: 5px; /* Rounds the corners of the input fields and select dropdown */
+    border: 1px solid #ccc; /* Adds a light gray border to the input fields and select dropdown */
+    display: block; /* Ensures input fields and select box behave as block-level elements */
+  }
+  
+  /* Styling for the buttons in the user registration form */
+  .user-registration-details button {
+    padding: 10px 20px; /* Adds padding inside the buttons */
+    background-color: #0073e6; /* Blue background color for the buttons */
+    color: white; /* Sets the text color of the buttons to white */
+    border: none; /* Removes the default border */
+    border-radius: 5px; /* Rounds the corners of the buttons */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    width: 150px; /* Sets a fixed width for the buttons */
+    align-self: flex-start; /* Aligns the buttons to the start of the flex container */
+  }
+  
+  /* Styling for the buttons when hovered */
+  .user-registration-details button:hover {
+    background-color: #005bb5; /* Darker blue background color when hovering */
+  }
+  
+  /* Footer block styling */
+  #footer-block {
+    width: 100%; /* Makes the footer block full width */
+    padding: 20px; /* Adds padding inside the footer block */
+    background-color: rgba(
+      0,
+      95,
+      158,
+      0.8
+    ); /* Semi-transparent dark blue background color for the footer */
+    text-align: center; /* Centers the text inside the footer block */
+    color: white; /* Sets the text color to white */
+  }
+  
+  /* Top section of the footer */
+  .footer-top {
+    margin-bottom: 10px; /* Adds margin below the top section */
+  }
+  
+  /* Styling for the social media icons in the footer */
+  .footer-bottom .social-icon {
+    width: 25px; /* Sets a fixed width for the social media icons */
+    height: 25px; /* Sets a fixed height for the social media icons */
+    margin: 0 10px; /* Adds horizontal space between the icons */
+  }
+  
+  /* Data-footer block background styling */
+  #data-footer {
+    background: url("../images/background1-1054x740.png") no-repeat center center fixed; /* Sets a background image for the data-footer block */
+    background-size: cover; /* Ensures the background image covers the entire data-footer block */
+  }
+  
+  /* Media query for devices with a maximum width of 768px */
+  @media (max-width: 768px) {
+    #data-block {
+      flex-direction: column; /* Stacks the child elements vertically on small screens */
+    }
+    .registration-image,
+    .user-registration-details {
+      width: 100%; /* Makes the image and registration form containers take full width on small screens */
+      margin: 10px 0; /* Adds vertical margin between elements */
+    }
+  }
+  

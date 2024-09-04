@@ -1,0 +1,125 @@
+/* Main layout and general styling */
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  /* background: url("../images/background1-1054x740.png") no-repeat center center fixed; */
+  /* background-size: cover; */
+}
+
+/* Header block styling */
+#header-block {
+  width: 100%; /* Makes the header block full width */
+  padding: 20px; /* Adds padding inside the header block */
+  background-color: #005f9e; /* Dark background color for the header */
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Vertically centers items in the header block */
+  font-family: Arial, sans-serif; /* Sets the default font for the body to Arial */
+}
+
+/* Logo container styling */
+.logo-container {
+  width: 100px; /* Sets the width of the logo container */
+  text-align: center; /* Centers the logo horizontally */
+}
+
+/* Logo image styling */
+.logo {
+  width: 100px; /* Sets the width of the logo */
+  height: 100px; /* Sets the height of the logo */
+}
+
+/* Title container styling */
+.title-container {
+  flex-grow: 1; /* Allows the title container to grow and take up available space */
+  padding-left: 20px; /* Adds padding to the left of the title */
+}
+
+/* Title text styling */
+.title-container h1 {
+  font-size: 24px; /* Sets the font size for the title */
+  color: white; /* Sets the text color to white */
+  margin: 0; /* Removes default margin */
+  padding-bottom: 10px; /* Adds space between the title and menu */
+}
+
+/* Main menu styling */
+.main-menu ul {
+  list-style: none; /* Removes bullet points from the list */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Uses flexbox layout for the menu */
+}
+
+.main-menu li {
+  margin-right: 15px; /* Adds space between menu items */
+}
+
+.main-menu a {
+  text-decoration: none; /* Removes the default underline from links */
+  color: white; /* Sets the text color of the menu items to white */
+  padding: 10px 15px; /* Adds padding inside the menu items */
+  font-weight: bold; /* Makes the menu item text bold */
+  display: block; /* Makes the links block-level elements */
+}
+
+.main-menu a:hover {
+  background-color: #0073e6; /* Changes background color on hover */
+  border-bottom: 2px solid white; /* Adds a white underline on hover */
+}
+
+/* Data block styling */
+.data-block {
+  padding: 20px; /* Adds padding inside the data block */
+  background-color: #f1f1f1; /* Light gray background color */
+  margin-top: 20px; /* Adds space above the data block */
+  min-height: 400px; /* Ensures the data block has a minimum height */
+  font-family: "Times New Roman", Times, serif;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+/* Footer block styling */
+#footer-block {
+  width: 100%; /* Makes the footer block full width */
+  padding: 20px; /* Adds padding inside the footer block */
+  background-color: rgba(
+    0,
+    95,
+    158,
+    0.8
+  ); /* Semi-transparent dark blue background color for the footer */
+  text-align: center; /* Centers the text inside the footer block */
+  color: white; /* Sets the text color to white */
+  font-family: Arial, sans-serif; /* Sets the default font for the body to Arial */
+}
+
+/* Top section of the footer */
+.footer-top {
+  margin-bottom: 10px; /* Adds margin below the top section */
+}
+
+/* Styling for the social media icons in the footer */
+.footer-bottom .social-icon {
+  width: 25px; /* Sets a fixed width for the social media icons */
+  height: 25px; /* Sets a fixed height for the social media icons */
+  margin: 0 10px; /* Adds horizontal space between the icons */
+}
+
+/* Media query for devices with a maximum width of 768px */
+@media (max-width: 768px) {
+  .module {
+    width: 100%; /* Makes the modules take full width on small screens */
+    margin: 10px 0; /* Adds vertical margin between elements */
+  }
+}

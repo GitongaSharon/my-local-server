@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8" />
+
+    <!-- Ensures the page is responsive on all devices by setting the viewport width to the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The title of the document, shown in the browser tab -->
+    <title>Login - KPEMS</title>
+
+    <!-- Links an external CSS file for styling the page -->
+    <link rel="stylesheet" href="styles/login.css" />
+</head>
+
+<body>
+    <!-- Header block containing the logo and title -->
+    <div id="header-block">
+        <!-- Container for the logo -->
+        <div class="logo-container">
+            <!-- The school logo image with alt text for accessibility -->
+            <img src="images/logo-300x300.png" alt="Logo" class="logo" />
+        </div>
+        <!-- Container for the title -->
+        <div class="title-container">
+            <!-- The main title of the page -->
+            <h1>KPEMS - Login</h1>
+        </div>
+    </div>
+
+    <!-- Data and footer block container -->
+    <div id="data-footer">
+        <!-- Data block containing the login form and an image -->
+        <div id="data-block">
+            <!-- Image related to the login page -->
+            <div class="login-image">
+                <img src="images/home-image-650x945.jpg" alt="Introduction Image" class="intro-image" />
+            </div>
+            <!-- User login details form -->
+            <div class="user-login-details">
+                <!-- Form for user login -->
+                <!-- 'action' specifies the file that processes the form data, 'method' is how the data is sent -->
+                <form id="login-form" action="login.php" method="post">
+                    <!-- Label and input for the user's first name -->
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter first name" />
+                    
+                    <!-- Label and input for the user's last name -->
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter last name" />
+                    
+                    <!-- Label and input for the user's password -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" />
+                    
+                    <!-- Submit button to send the form data for processing -->
+                    <button type="submit">Login</button>
+                    
+                    <!-- Button to take the user back to the home page -->
+                    <button type="button" onclick="goHome()">Go Back Home</button>
+                    <!-- Inline JavaScript to handle the Go Home button click -->
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer block containing copyright information and social media links -->
+        <div id="footer-block">
+            <!-- Top section of the footer -->
+            <div class="footer-top">
+                <!-- Copyright information -->
+                <p>&copy; 2024 Kenya Primary School Examination Management System</p>
+            </div>
+            <!-- Bottom section of the footer with social media icons -->
+            <div class="footer-bottom">
+                <!-- LinkedIn social media icon with a hyperlink -->
+                <a href="https://www.linkedin.com/school">
+                    <img src="images/linkedin-100x100.png" alt="LinkedIn" class="social-icon" />
+                </a>
+                <!-- Instagram social media icon with a hyperlink -->
+                <a href="https://www.instagram.com/school">
+                    <img src="images/instagram-100x100.png" alt="Instagram" class="social-icon" />
+                </a>
+                <!-- Facebook social media icon with a hyperlink -->
+                <a href="https://www.facebook.com/school">
+                    <img src="images/facebook-100x100.png" alt="Facebook" class="social-icon" />
+                </a>
+                <!-- YouTube social media icon with a hyperlink -->
+                <a href="https://www.youtube.com/school">
+                    <img src="images/youtube-100x100.png" alt="YouTube" class="social-icon" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file for additional functionality -->
+    <script src="javascript/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPEMS - Data View and Edit</title>
+    <link rel="stylesheet" href="styles/data_view-edit.css" />
+  </head>
+  <body>
+    <div id="header-block">
+      <div class="logo-container">
+        <img src="images/logo-300x300.png" alt="Logo" class="logo" />
+      </div>
+      <div class="title-container">
+        <h1>KPEMS - Data View and Edit</h1>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="home_page.html">Home</a></li>
+            <li><a href="tasks.html">My Assigned Tasks</a></li>
+            <li><a href="logout.html">End My Session</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id="data-block">
+      <select id="table-select">
+        <option value="">Select Table</option>
+        <option value="users">Users</option>
+        <option value="students">Students</option>
+        <option value="teachers">Teachers</option>
+        <option value="subjects">Subjects</option>
+        <option value="parents">Parents</option>
+        <option value="counties">Counties</option>
+        <option value="grades">Grades</option>
+        <option value="streams">Streams</option>
+        <option value="grade_subjects">Grade Subjects</option>
+        <option value="subject_teachers">Subject Teachers</option>
+        <option value="examination_results">Examination Results</option>
+      </select>
+      <div id="data-view-edit-grid"></div>
+    </div>
+
+    <!-- Footer block containing copyright information and social media links -->
+    <div id="footer-block">
+      <!-- Top section of the footer -->
+      <div class="footer-top">
+        <!-- Copyright information -->
+        <p>&copy; 2024 Kenya Primary School Examination Management System</p>
+      </div>
+      <!-- Bottom section of the footer with social media icons -->
+      <div class="footer-bottom">
+        <!-- LinkedIn social media icon with a hyperlink -->
+        <a href="https://www.linkedin.com/school"
+          ><img
+            src="images/linkedin-100x100.png"
+            alt="LinkedIn"
+            class="social-icon"
+        /></a>
+        <!-- Instagram social media icon with a hyperlink -->
+        <a href="https://www.instagram.com/school"
+          ><img
+            src="images/instagram-100x100.png"
+            alt="Instagram"
+            class="social-icon"
+        /></a>
+        <!-- Facebook social media icon with a hyperlink -->
+        <a href="https://www.facebook.com/school"
+          ><img
+            src="images/facebook-100x100.png"
+            alt="Facebook"
+            class="social-icon"
+        /></a>
+        <!-- YouTube social media icon with a hyperlink -->
+        <a href="https://www.youtube.com/school"
+          ><img
+            src="images/youtube-100x100.png"
+            alt="YouTube"
+            class="social-icon"
+        /></a>
+      </div>
+    </div>
+
+    <script src="javascript/data_view-edit.js"></script>
+  </body>
+</html>

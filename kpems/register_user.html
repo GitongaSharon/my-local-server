@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specifies the character encoding for the HTML document, ensuring it is properly displayed -->
+    <meta charset="UTF-8" />
+
+    <!-- Ensures that the page is responsive and scales correctly on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The title of the document, which will appear on the browser tab -->
+    <title>KPEMS - Register User</title>
+
+    <!-- Links the external CSS file for styling the page, keeping the HTML clean and maintainable -->
+    <link rel="stylesheet" href="styles/register_user.css" />
+  </head>
+  <body>
+    <!-- Header block: Contains the logo and title of the application -->
+    <div id="header-block">
+      <!-- Container for the application logo, which visually represents the application -->
+      <div class="logo-container">
+        <!-- Displays the logo image with alternative text for accessibility -->
+        <img src="images/logo-300x300.png" alt="Logo" class="logo" />
+      </div>
+      <!-- Container for the application title, which gives context to the user -->
+      <div class="title-container">
+        <!-- Main title displayed on the page, indicating that this is the user registration page -->
+        <h1>KPEMS - User Registration</h1>
+      </div>
+    </div>
+
+    <!-- Main content area: Contains the registration form and an accompanying image -->
+    <div id="data-footer">
+      <!-- Data block: This section is divided into an image and the registration form -->
+      <div id="data-block">
+        <!-- Container for the registration image, providing a visual element on the page -->
+        <div class="registration-image">
+          <!-- Image representing the registration process, with alternative text for accessibility -->
+          <img
+            src="images/general-image-650x945.jpg"
+            alt="Registration Image"
+            class="intro-image"
+          />
+        </div>
+        <!-- Container for the user registration form -->
+        <div class="user-registration-details">
+          <!-- Registration form: Collects user data to register a new account -->
+          <form id="registration-form" action="register_user.php" method="post">
+            <!-- Label and input field for the user's first name -->
+            <label for="first_name">First Name:</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              placeholder="Enter first name"
+            />
+            <!-- Label and input field for the user's last name -->
+            <label for="last_name">Last Name:</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              placeholder="Enter last name"
+            />
+            <!-- Label and dropdown for selecting the user's type (e.g., Admin, Teacher, etc.) -->
+            <label for="user_type_id">User Type:</label>
+            <select id="user_type_id" name="user_type_id">
+              <option value="1">System Admin</option>
+              <option value="2">Management</option>
+              <option value="3">Teacher</option>
+              <option value="4">Student</option>
+              <option value="5">Parent</option>
+              <option value="6">Others</option>
+            </select>
+            <!-- Label and input field for the user's email address -->
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email"
+            />
+            <!-- Label and input field for the user's telephone number -->
+            <label for="telephone">Telephone:</label>
+            <input
+              type="text"
+              id="telephone"
+              name="telephone"
+              placeholder="Enter telephone"
+            />
+            <!-- Label and input field for the user's password (input is masked) -->
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter password"
+            />
+            <!-- Button to submit the form data to the server for processing -->
+            <button type="submit">Register</button>
+            <!-- Button to return the user to the home page without submitting the form -->
+            <button type="button" onclick="goHome()">Go Back Home</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer block: Contains the copyright information and links to social media -->
+      <div id="footer-block">
+        <!-- Top section of the footer: Displays the copyright message -->
+        <div class="footer-top">
+          <p>&copy; 2024 Kenya Primary School Examination Management System</p>
+        </div>
+        <!-- Bottom section of the footer: Displays social media icons with links -->
+        <div class="footer-bottom">
+          <!-- LinkedIn social media icon linked to the school's LinkedIn page -->
+          <a href="https://www.linkedin.com/school"
+            ><img
+              src="images/linkedin-100x100.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <!-- Instagram social media icon linked to the school's Instagram page -->
+          <a href="https://www.instagram.com/school"
+            ><img
+              src="images/instagram-100x100.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <!-- Facebook social media icon linked to the school's Facebook page -->
+          <a href="https://www.facebook.com/school"
+            ><img
+              src="images/facebook-100x100.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <!-- YouTube social media icon linked to the school's YouTube channel -->
+          <a href="https://www.youtube.com/school"
+            ><img
+              src="images/youtube-100x100.png"
+              alt="YouTube"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Links to an external JavaScript file to add interactivity and functionality to the page -->
+    <script src="javascript/register_user.js"></script>
+  </body>
+</html>

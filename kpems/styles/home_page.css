@@ -1,0 +1,153 @@
+/* Main layout and general styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the default font for the body to Arial */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    background: url("../images/background.jpg") no-repeat center center fixed; /* Sets a background image, centers it, and makes it fixed */
+    background-size: cover; /* Ensures the background image covers the entire page */
+  }
+  
+  /* Header block styling */
+  #header-block {
+    width: 100%; /* Makes the header block full width */
+    padding: 20px; /* Adds padding inside the header block */
+    background-color: #005f9e; /* Dark background color for the header */
+    display: flex; /* Uses flexbox layout */
+    align-items: center; /* Vertically centers items in the header block */
+  }
+  
+  /* Logo container styling */
+  .logo-container {
+    width: 100px; /* Sets the width of the logo container */
+    text-align: center; /* Centers the logo horizontally */
+  }
+  
+  /* Logo image styling */
+  .logo {
+    width: 100px; /* Sets the width of the logo */
+    height: 100px; /* Sets the height of the logo */
+  }
+  
+  /* Title container styling */
+  .title-container {
+    flex-grow: 1; /* Allows the title container to grow and take up available space */
+    padding-left: 20px; /* Adds padding to the left of the title */
+  }
+  
+  /* Title text styling */
+  .title-container h1 {
+    font-size: 24px; /* Sets the font size for the title */
+    color: white; /* Sets the text color to white */
+    margin: 0; /* Removes default margin */
+  }
+  
+  /* Data block styling */
+  #data-block {
+    display: flex; /* Uses flexbox layout for the data block */
+    justify-content: start; /* Aligns content to the start of the flex container */
+    align-items: flex-start; /* Aligns items to the top of the flex container */
+    padding: 40px; /* Adds padding inside the data block */
+    /* background-color: #0f79b0; /* Background color for the data block (commented out) */
+  }
+  
+  /* Styling for the home introduction image container */
+  .home-intro-image {
+    /* background-color: #a2d5f2; /* Background color for the container (commented out) */
+    padding: 20px; /* Adds padding inside the container */
+    margin: 10px; /* Adds margin around the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    text-align: center; /* Centers the image horizontally */
+    flex: 1; /* Allows the container to grow or shrink as needed */
+  }
+  
+  /* Styling for the home introduction image itself */
+  .intro-image {
+    width: 100%; /* Makes the image take up the full width of its container */
+    max-width: 350px; /* Limits the maximum width of the image */
+    height: auto; /* Ensures the height scales proportionally with the width */
+  }
+  
+  /* Styling for the home introduction text container */
+  .home-intro {
+    /* background-color: #a2d5f2; /* Background color for the container (commented out) */
+    padding: 20px; /* Adds padding inside the container */
+    margin: 10px; /* Adds margin around the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    flex: 2; /* Allows the container to grow or shrink as needed */
+    display: flex; /* Uses flexbox layout for the home intro container */
+    flex-direction: column; /* Stacks the child elements vertically */
+    justify-content: flex-start; /* Aligns items to the start of the flex container */
+  }
+  
+  /* Styling for the home introduction text */
+  .home-intro-text {
+    font-size: 14px; /* Sets the font size for the text */
+    color: #333; /* Sets the text color to dark gray */
+    margin-bottom: 20px; /* Adds space below the text */
+    text-align: left; /* Aligns the text to the left */
+    /* background-color: #ffd966; /* Background color for intro text (commented out) */
+    width: 350px; /* Sets a fixed width for the text block */
+    padding: 10px; /* Adds padding inside the text block */
+    border-radius: 5px; /* Rounds the corners of the text block */
+  }
+  
+  /* Styling for the links in the home introduction section */
+  .home-login-link,
+  .home-register-link,
+  .home-exit-link {
+    margin-top: 10px; /* Adds space above the links */
+    margin-left: 50px; /* Adds space to the left of the links */
+    text-align: center; /* Centers the links horizontally */
+    width: 150px; /* Sets a fixed width for the link containers */
+  }
+  
+  /* Styling for the links themselves */
+  .link {
+    display: inline-block; /* Makes the links inline-block elements */
+    padding: 10px 20px; /* Adds padding inside the links */
+    background-color: #0073e6; /* Blue background color for the links */
+    color: white; /* Sets the text color of the links to white */
+    text-decoration: none; /* Removes the default underline from links */
+    border-radius: 5px; /* Rounds the corners of the links */
+    width: 200px; /* Sets a fixed width for the links */
+  }
+  
+  /* Styling for the links when hovered */
+  .link:hover {
+    background-color: #005bb5; /* Darker blue background color when hovering */
+  }
+  
+  /* Footer block styling */
+  #footer-block {
+    width: 100%; /* Makes the footer block full width */
+    padding: 20px; /* Adds padding inside the footer block */
+    background-color: #005f9e; /* Dark background color for the footer */
+    text-align: center; /* Centers the text inside the footer block */
+    color: white; /* Sets the text color to white */
+  }
+  
+  /* Top section of the footer */
+  .footer-top {
+    margin-bottom: 10px; /* Adds margin below the top section */
+  }
+  
+  /* Styling for the social media icons in the footer */
+  .footer-bottom .social-icon {
+    width: 25px; /* Sets a fixed width for the social media icons */
+    height: 25px; /* Sets a fixed height for the social media icons */
+    margin: 0 10px; /* Adds horizontal space between the icons */
+  }
+  
+  /* Media query for devices with a maximum width of 768px */
+  @media (max-width: 768px) {
+    #data-block {
+      flex-direction: column; /* Stacks the child elements vertically on small screens */
+    }
+    .home-intro-image,
+    .home-intro {
+      width: 100%; /* Makes the image and home intro containers take full width on small screens */
+      margin: 10px 0; /* Adds vertical margin between elements */
+    }
+  }
+  
